@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/html.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <div
+        class="w-screen md:w-[80%] lg:w-[50%] h-screen bg-sky-500 mx-auto px-4 py-5"
+      >
+        <div>
+          <h1 class="text-4xl text-white font-[600]">To Do List</h1>
+        </div>
+        <form id="task-frm">
+          <div class="flex gap-4 mt-5">
+            <input
+              type="text"
+              id="task-inp"
+              class="w-[90%] py-2 ps-1 outline-none"
+            />
+            <button class="w-[10%] bg-sky-400">
+              <i class="fa-solid fa-plus text-white text-2xl"></i>
+            </button>
+          </div>
+        </form>
+        <ul id="todo_list" class="flex flex-col mt-5 gap-y-4 h-[75vh] overflow-auto">
+          <!-- <li class="bg-sky-400 p-2 flex items-center justify-between">
+            <div class="flex gap-4">
+              <input
+                type="radio"
+                class="scale-125 border-none outline-none"
+                name="completed_btn"
+                id="completed_btn"
+              />
+              <input
+                type="text"
+                name=""
+                id=""
+                class="py-2 ps-1 bg-transparent border-none outline-none text-white"
+                readonly
+                value="buy a book"
+              />
+            </div>
+            <div>
+              <i class="fa-solid fa-pencil px- 2 text-xl text-white"></i>
+              <i class="fa-solid fa-trash-can px-2 text-xl text-white"></i>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+    </main>
+    <script type="module" src="./src/js/script.js"></script>
+  </body>
+</html>
